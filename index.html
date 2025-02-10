@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vatrina</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Geist&display=swap" rel="stylesheet">
-    <script defer src="js/script.js"></script>
-</head>
-<body>
-    <nav class="navbar">
-        <img src="imgs/vatrina2.jpg" alt="Vatrina Logo" class="logo">
-        <div class="nav-links">
-            <a href="cart.html" target="_blank" class="cart-link">
-                <span>Cart (<span id="cart-count">0</span>)</span>
-            </a>
-            <a href="#" class="user-icon">👤</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vatrina</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Geist&display=swap" rel="stylesheet">
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <img src="imgs/vatrina2.jpg" alt="Vatrina Logo" class="logo">
+            <div class="nav-links">
+                <a href="cart.html" target="_blank" class="cart-link">
+                    <span>Cart (<span id="cart-count">0</span>)</span>
+                </a>
+                <a href="#" class="user-icon">👤</a>
+            </div>
+        </nav>
+    
+        <h1 class="store-title">Vatrina Supermarket</h1>
+    
+        <div class="products-container">
+            <div class="products" id="products">
+                <div class="product" data-id="1" data-name="V Cola" data-price="20">
+                    <img src="imgs/.jpep" alt="V Cola">
+                    <h2>V Cola</h2>
+                    <p>20 EGP</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                    <div class="vertical-divider"></div>
+                </div>
+    
+                <div class="product" data-id="2" data-name="Honey" data-price="200">
+                    <img src="imgs/honey.jpg" alt="Honey">
+                    <h2>Honey</h2>
+                    <p>200 EGP</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                    <div class="vertical-divider"></div>
+                </div>
+    
+                <div class="product" data-id="3" data-name="Coffee" data-price="150">
+                    <img src="imgs/coffee.jpg" alt="Coffee">
+                    <h2>Coffee</h2>
+                    <p>150 EGP</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+    
+                <div class="horizontal-divider"></div>
+    
+                <div class="product" data-id="4" data-name="Tea" data-price="80">
+                    <img src="imgs/tea.jpg" alt="Tea">
+                    <h2>Tea</h2>
+                    <p>80 EGP</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                    <div class="vertical-divider"></div>
+                </div>
+    
+                <div class="product" data-id="5" data-name="Olive Oil" data-price="250">
+                    <img src="imgs/olive_oil.jpg" alt="Olive Oil">
+                    <h2>Olive Oil</h2>
+                    <p>250 EGP</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                    <div class="vertical-divider"></div>
+                </div>
+    
+                <div class="product" data-id="6" data-name="Spices" data-price="120">
+                    <img src="imgs/spices.jpg" alt="Spices">
+                    <h2>Spices</h2>
+                    <p>120 EGP</p>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
         </div>
-    </nav>
-
-    <h1 class="store-title">Vatrina Supermarket</h1>
-
-    <div class="products-container">
-        <div class="products" id="products">
-            <div class="product" data-id="1" data-name="V Cola" data-price="20">
-                <img src="imgs/.jpep" alt="V Cola">
-                <h2>V Cola</h2>
-                <p>20 EGP</p>
-                <button onclick="addToCart(this)">Add to Cart</button>
-                <div class="vertical-divider"></div>
-            </div>
-
-            <div class="product" data-id="2" data-name="Honey" data-price="200">
-                <img src="imgs/honey.jpg" alt="Honey">
-                <h2>Honey</h2>
-                <p>200 EGP</p>
-                <button onclick="addToCart(this)">Add to Cart</button>
-                <div class="vertical-divider"></div>
-            </div>
-
-            <div class="product" data-id="3" data-name="Coffee" data-price="150">
-                <img src="imgs/coffee.jpg" alt="Coffee">
-                <h2>Coffee</h2>
-                <p>150 EGP</p>
-                <button onclick="addToCart(this)">Add to Cart</button>
-            </div>
-
-            <div class="horizontal-divider"></div>
-
-            <div class="product" data-id="4" data-name="Tea" data-price="80">
-                <img src="imgs/tea.jpg" alt="Tea">
-                <h2>Tea</h2>
-                <p>80 EGP</p>
-                <button onclick="addToCart(this)">Add to Cart</button>
-                <div class="vertical-divider"></div>
-            </div>
-
-            <div class="product" data-id="5" data-name="Olive Oil" data-price="250">
-                <img src="imgs/olive_oil.jpg" alt="Olive Oil">
-                <h2>Olive Oil</h2>
-                <p>250 EGP</p>
-                <button onclick="addToCart(this)">Add to Cart</button>
-                <div class="vertical-divider"></div>
-            </div>
-
-            <div class="product" data-id="6" data-name="Spices" data-price="120">
-                <img src="imgs/spices.jpg" alt="Spices">
-                <h2>Spices</h2>
-                <p>120 EGP</p>
-                <button onclick="addToCart(this)">Add to Cart</button>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
