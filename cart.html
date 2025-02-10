@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <script defer src="js/cart.js"></script>
+</head>
+<body>
+    <div class="cart-page">
+        <div class="cart-container">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+        </div>
+
+        <div class="checkout-container">
+            <h3>Order Summary</h3>
+            <p>Subtotal: <span id="subtotal">0</span> EGP</p>
+            <label>
+                <input type="radio" name="delivery" value="20" checked> Delivery (20 EGP)
+            </label>
+            <label>
+                <input type="radio" name="delivery" value="10"> Pickup (10 EGP)
+            </label>
+            <p>Total: <span id="total">0</span> EGP</p>
+            <button class="checkout-btn">Place Order</button>
+        </div>
+
+        <!-- Back to Shopping Button (Now below Order Summary) -->
+        <div class="back-home">
+            <a href="index.html" class="back-btn">← Back to Shopping</a>
+        </div>
+    </div>
+</body>
+</html>

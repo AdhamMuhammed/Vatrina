@@ -1,0 +1,133 @@
+/* Define color variables */
+:root {
+  --tan: #D2B48C;
+  --wheat: #F5DEB3;
+  --bisque: #FFE4C4;
+  --saddle-brown: #6B4226;
+  --sienna: #8B5A2B;
+  --dark-brown: #5A3825;
+}
+
+body {
+  background: var(--tan);
+  font-family: 'Geist', sans-serif;
+  color: var(--saddle-brown);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: var(--dark-brown);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar a {
+  color: var(--wheat);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.store-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.products-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Product Box */
+.product {
+  background: var(--bisque);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/* .product:hover {
+  transform: scale(1.05);
+} */
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background: var(--saddle-brown);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--sienna);
+}
+
+.vertical-divider {
+  width: 2px;
+  height: 100%;
+  background: var(--saddle-brown);
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 2px;
+  background: var(--saddle-brown);
+  margin: 30px 0; /* Increased spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .product {
+    width: calc(50% - 15px); /* 2 products per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    justify-content: center; /* Center products on smaller screens */
+  }
+  
+  .product {
+    width: 80%; /* 1 product per row on small screens */
+  }
+
+  .vertical-divider {
+    display: none; /* Hide vertical dividers on small screens */
+  }
+}
